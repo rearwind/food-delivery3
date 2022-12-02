@@ -41,7 +41,7 @@ logging:
 
 api:
   url:
-    pay: pay:8082
+    pay: localhost:8082
 
 
 server:

@@ -61,9 +61,11 @@ public class Order  {
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
         fooddelivery.external.PayCommand payCommand = new fooddelivery.external.PayCommand();
+        if (getPrice()!=null)
+            payCommand.setPrice(getPrice());
         // mappings goes here
         AppApplication.applicationContext.getBean(fooddelivery.external.PaymentService.class)
-            .pay(/* get???(), */ payCommand);
+            .pay(getId(), payCommand);
 
 
 

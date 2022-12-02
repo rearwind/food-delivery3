@@ -28,8 +28,7 @@ public class PolicyHandler{
 
         OrderCancelled event = orderCancelled;
         System.out.println("\n\n##### listener CancelPayment : " + orderCancelled + "\n\n");
-
-
+    
         
 
         // Sample Logic //
